@@ -1,0 +1,66 @@
+.portfolio {
+  text-align: center;
+  background-size: cover;
+  background-position: top center;
+}
+
+.work {
+  position: relative;
+  display: inline-block;
+  height: 70vh;
+  overflow: hidden;
+  border: solid 20px $black;
+}
+
+.work__image {
+  display: block;
+  max-width: 100%;
+  width: 720px;
+  margin: 0 auto;
+}
+
+.work__link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: $black;
+  color: $white;
+}
+
+.work_description {
+
+}
+
+.work__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba($black, 0.8);
+  text-align: center;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: 0.8s;
+  background-size: cover;
+  background-position: top center;
+
+  &:hover, :focus {
+    background-color: rgba($white, 0);
+    .work__overlay-text {
+      opacity: 0;
+    }
+  }
+}
+
+.work__overlay-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  opacity: 1;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: 0.8s;
+  color: rgba($white, 0.8);
+}
