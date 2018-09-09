@@ -1,6 +1,9 @@
 # Compiled files
 dist/
 
+# Config
+config/config.js
+
 # Node stuff
 node_modules
 .npm
