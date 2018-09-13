@@ -7,6 +7,7 @@ This is a boilerplate project using the following technologies:
 - [Webpack](https://webpack.github.io/) for compilation
 
 
+## Hotfix Test
 ## Requirements
 
 - [Node.js](https://nodejs.org/en/) 6+
